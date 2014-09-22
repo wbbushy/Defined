@@ -1,4 +1,10 @@
 angular.module('Defined')
     .controller('HomeCtrl', function ($scope) {
-        $scope.things = ['foo', 'bar', 'baz'];
+      $scope.list = [];
+      $scope.submit = function() {
+        if ($scope.text) {
+          $scope.list.push(this.text);
+          $scope.text = '';
+        }
+      };
     });
