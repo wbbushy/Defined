@@ -12,9 +12,15 @@
 
   <div id="list-id">
     <h2>Words</h2>
-   <a ng-repeat="word in list track by $index">
-    {{word}}
-  </a>
+    <a ng-repeat="word in list track by $index">
+      <h4>
+        {{word}}
+      </h4>
+      <h5 id="modal"style="display:none" showonhoverparent>
+        {{word}}
+      </h5>
+      <br>
+    </a>
   </div>
 
 </div>
